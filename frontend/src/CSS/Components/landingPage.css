@@ -1,0 +1,119 @@
+.landingPage {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.landingPageIntro {
+    width: 35%;
+    color: white;
+    margin-top: 25px;
+}
+.landingPageIntro h1 {
+    font-size: 48px;
+}
+.landingPageIntro p {
+    font-size: 20px;
+    line-height: 40px;
+    margin-top: 20px;
+}
+
+.landingPage img{
+    width: 40%;
+}
+
+.landingPageForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+    width: 50%;
+}
+.landingPageForm input, .landingPageForm button {
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: #121821;
+    border: 1px solid #243143;
+    transition: all .15s linear;
+}
+.landingPageForm button:hover {
+    background-color: #7E0FE1;
+    color: #121821;
+}
+
+.landingPageScroller {
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.landingPageScroller img {
+    width: 50px;
+    cursor: pointer;
+    transition: transform 0.05s linear;
+}
+.landingPageScroller img:hover {
+    transform: rotate(180deg);
+}
+.landingPageScroller div {
+    color: white;
+    display: flex;
+    gap: 15px;
+    position: absolute;
+    right: 30px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 500px) {
+    .landingPage {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 100vw;
+        margin-top: 0px;
+    }
+
+    .landingPageIntro {
+        width: 100%;
+        text-align: center;
+    }
+    .landingPageIntro h1 {
+        font-size: 32px;
+        line-height: 50px;
+    }
+    .landingPageIntro p {
+        font-size: 18px;
+        width: 80%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 36px;
+    }
+    .landingPageForm {
+        width: 80%;
+        justify-content: center;
+        align-items: stretch;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .landingPage img {
+        width: 80%;
+        margin-top: 50px;
+    }
+
+    .landingPageScroller img{
+        display: none;
+    }
+    .landingPageScroller div {
+        right: 0px;
+        left: auto;
+        right: auto;
+        margin-top: 100px;
+    }
+}

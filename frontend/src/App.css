@@ -1,0 +1,5 @@
+.appBody {
+  height: 100%;
+  background-image: linear-gradient(#121821 , #111820 );
+  scroll-behavior: smooth;
+}

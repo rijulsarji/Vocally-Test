@@ -1,0 +1,21 @@
+.navbarRS {
+    gap: 75px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+.navbarElements {
+    gap: 10px;
+}
+.downloadLink {
+    margin-top: 5px;
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 10px;
+    transition: all 0.15s linear;
+    cursor: pointer;
+    color: white;
+}
+.downloadLink:hover {
+    color: #121821;
+    background-color: white;
+}
